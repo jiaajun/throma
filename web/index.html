@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>throma</title>
+    <link rel="stylesheet" href="style\style.css">
+</head>
+<body onLoad="onLoad()">
+    <a id="start"></a>
+    <button id='backtotop' onclick="onLoad()"></button>
+    <div class="header">
+        <div class="navbar">
+            <img id='logo' src="style\images\onlinelogomaker-121220-1413-9489.png">
+            <a href="#educate">Education</a>
+            <a href="#events">Events</a>
+            <a href="#donate">Donate</a>
+            <a href="#start">Home</a>
+        </div>
+    </div>
+
+    <div class="graphic">
+        <h1>BE A FORCE FOR NATURE</h1>        
+        <p>There are now <span id='critical-number'>6811</span> critically endangered species in the world. Let's do our part to reduce this number.</p>
+        <div id="animate"><a href='#donate' id='help-now'>Let's go ⤅</a></div>
+    </div>
+
+    <div class="about-us" id="donate">
+        <div class='grid-obj1'>
+            <p>ABOUT US</p>
+            <h1>Standing Together For A Better World.</h1>
+        </div>
+        <div class="grid-obj2">
+            <div class="togglebar">    
+                <button id="toggle1" onclick="toggleText1()" >Make Donation</button>
+                <button id='toggle2' onclick="toggleText2()">Volunteer</button>
+                <button id='toggle3' onclick="toggleText3()">Raise Awareness</button>
+            </div> 
+            <div id="toggletext">
+                We conduct in-depth research, reviewed monthly, on organisations to ensure that any money given will be put to the upmost use. <br><br>
+                100% of donations towards us will go towards conservation efforts towards endengered species. <br><br>
+                We will also be providing proof of your donation to your email address. <br>
+                <button id='donate-button'>Donate Now ↣</button>
+            </div>
+        </div>
+        <div class="grid-obj3">
+            <img id='email-icon' src="style\images\email.svg" alt="email">
+            <p>Subscribe to our newsletter!</p>
+            <form action="">
+                <input type="text" placeholder="Email:"><br>
+                <input type='submit'>
+            </form>
+        </div>
+    </div>
+
+    <div class="donate">
+        <h1>Donating To Specific Regions</h1>
+        <div class="locations">
+            <div class='grid'id="na">
+                <a id='na' href="#">North America
+                <p>Home of the Pigmy Racoons and Red Wolf</p></a>
+            </div>
+            <div class='grid' id="africa">
+                <a id='africa' href="#">Africa
+                    <p>Help out the Mountain Gorillas, Black Rhinos and Ethiopian Wolves</p></a>
+            </div>
+            <div class='grid' id="asia">
+                <a id='asia' href="#">Asia
+                    <p>Do our part for the Snow Leopards and Green Sea Turtles</p></a>
+            </div>
+            <div class='grid' id="sa">
+                <a id='sa' href="#">South America
+                    <p>Spix's Macaw and the Jaguars</p></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="events" id='events'>
+        <h1>Upcoming Events</h1>
+        <img src="style\images\next-event.jpg" class="upcoming-event">
+        <div class="event-name">NATIONAL BIRD DAY</div>
+        <div class="description">
+            The Avian Welfare Coalition’s National Bird Day campaign aims to reduce the suffering of birds by raising public awareness of the destructive bird trade, the realities of cruel bird breeding mills, and ways to improve the welfare of birds already in captivity. <br><br>
+            <a href="http://www.avianwelfare.org/nationalbirdday/" target="_blank">Join Now ➥</a>
+
+        </div>
+        <div class="timer">Coming up in:
+            <div id="demo"></div>
+        </div>
+        <div class="next-event">
+            <button>Show All Events ↣</button>
+        </div>
+    </div>
+
+    <div class="educate" id='educate'>
+        <h1>What Else Can We Do To Help?</h1>
+        <div class="educate-text">1) Educate your family about endangered species in your area. It’s not just about snow leopards in Russia, it’s about the ecosystem in your own backyard. Teach your friends and family about wildlife, birds, fish and plants that live near you. Just awareness of these species is a critical step. From the worms in the garden to the bats that pollinate and control the mosquitos, there are many ways that our daily habits at home affect these creatures.</div>
+        <div class="educate-text">2) Reduce your personal footprint. Drive less, walk more.  Support better public transport, use biodegradable products and eat whole food from your farmers market.</div>
+        <div class="educate-text">3) Do not purchase products from companies that are known polluters. Many industries pollute natural water resources and lobby hard so that they don’t have to clean up their own messes. You can do your part by not giving these companies your business, and cast your vote with your dollar.  Spread the word about bad business practices and when it dings their bottom lines, these companies will take notice.</div>
+        <div class="educate-text">4) Pledge to not buy any illegal wildlife products or endengered species parts. <br><br> This includes: <br> 
+            <ul>
+                <li>Not buying souvenirs made from endangered animal parts.</li>
+                <li>Not eating any wild meat.</li>
+                <li>Checking the ingredients list of traditional medicines before you buy.</li>
+                <li>Not keeping any wild animals as pets</li>
+                <li>Not buying wild animals with the intention to rescue them. This only creates more demand which incentives the hunting of wild animals.</li>
+                <li>Ask questions before you buy any goods. Make sure that the goods are legally sourced.</li>
+            </ul> <br> <br>
+            <span>You can call the following numbers to report any suspicious activities: </span> <br> <br>
+            ACRES Wildlife Crime Hotline: 97837782 (24 hours) <br>
+            Agri-Food and Veterinary Authority (AVA) hotline:
+            1800-476 1600 or 6805 2992 <br>
+            Airport Police: 6546 0000 <br>
+        </div>
+    </div>
+
+    <footer>
+        <div><a href="">FREQUENTLY ASKED QUESTIONS</a></div>
+        <div><a href="">CONTACT US</a></div>
+        <div>
+            SITE BY ME <br> © 2011 John Doe <i>All Rights Reserved</i>
+        </div>
+        
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
