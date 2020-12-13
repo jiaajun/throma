@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(242 251 233);
+    min-width: 1400px;
+}
+
+button:focus{outline: 0;}
+input[type='text']:focus{outline: 0;}
+input[type='submit']:focus{outline: 0;}
+
+#backtotop{
+    background-image: url('images/backtotop.svg');
+    background-repeat: no-repeat;
+    background-position: center -2px ;
+    background-size: 100% 100%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    border: 3px solid black;
+}
+#backtotop:hover{
+    animation-name: backtotop;
+    animation-duration: 1s;
+}
+@keyframes backtotop{
+    from{background-position: center -2px}
+    to{background-position: center -55px}
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(204, 200, 200);
+    padding: 25px;
+    display: block;
+    float: right;
+    height: 70px;
+    text-align: center;
+
+}
+.navbar a:hover{
+    background-color: white;
+    color: rgb(65, 64, 64)
+}
+#logo{
+    height: 70px;
+}
+
+.graphic{
+    height: 900px;
+    width: 100%;
+    background-image: url('images/deer.jpg');
+    background-color: rgba(0,0,0,0.25);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    box-shadow: 0px 30px 20px 0px rgba(0,0,0,0.3);
+}
+.graphic h1{
+    width: 40%;
+    text-align: center;
+    padding-top: 250px;
+    font-size: 80px;
+    color:white;
+    font-family: 'Lusitana', serif;
+    text-shadow: rgb(122, 122, 122) 4px 3px 0px;
+}
+
+.graphic p{
+    width: 40%;
+    text-align: center;
+    font-size: 36px;
+    padding: 100px;
+    font-family: 'Lusitana', serif; 
+    color: white;
+    padding-bottom: 40px;
+}
+
+.graphic p #critical-number{
+    font-family: 'Lusitana', serif; 
+    color: white;
+}
+.graphic a{
+    height: 40px;
+    font-size: 30px;
+    width: 200px;
+    background:transparent;
+    margin-left: 16%;
+    font-family: 'Lusitana', serif;
+    color: white;
+    position: relative;
+    transition: .15s;
+}
+.graphic a:hover{
+    color: thistle;
+    transform: translate(100px);
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-5px);
+    }
+  
+    50% {
+      transform: translateY(5px);
+    }
+  
+    100% {
+      transform: translateY(-5px);
+    }
+
+}
+.about-us{
+    width:70%;
+    display:grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    height: 509px;
+    grid-gap: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 100px;
+
+}
+.about-us .grid-obj1 p{
+    padding-top: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+    color: #9ED763;
+}
+.about-us .grid-obj1 h1{
+    margin-left: 10px;
+    margin-right: 30px ;
+    padding-top: 30px;
+}
+
+.about-us .grid-obj2 .togglebar{
+    width: 100%;
+    height: 75px;
+}
+.about-us .grid-obj2 .togglebar button{
+    text-decoration: none;
+    display: block;
+    width: 33.3%;
+    float: left;
+    height: 70px;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    background: rgb(194,227,88);
+    background: linear-gradient(0deg, rgba(194,227,88,1) 0%, rgba(105,222,61,1) 100%);
+    border: none;
+    border-bottom: 5px solid rgb(242 251 233);
+    font-family:'Work Sans', sans-serif;
+}
+.about-us .grid-obj2 .togglebar button:hover{
+    background: rgb(212,210,31);
+    background: linear-gradient(0deg, rgba(212,210,31,1) 0%, rgba(61,222,90,1) 100%);
+}
+.about-us .grid-obj2 .togglebar button:focus{
+    background: rgb(212,210,31);
+    background: linear-gradient(0deg, rgba(212,210,31,1) 0%, rgba(61,222,90,1) 100%);
+}
+.about-us .grid-obj2 .togglebar #toggle1{
+    border-right: 5px solid rgb(242 251 233);
+}
+.about-us .grid-obj2 .togglebar #toggle2{
+    border-right: 5px solid rgb(242 251 233);
+}
+.about-us .grid-obj2 #toggletext{
+    padding: 25px;
+    font-size: 20px;
+    font-family:'Work Sans', sans-serif;
+    line-height: 1.6;
+}
+
+
+.about-us .grid-obj3 {
+    background-color: #B6DE3D;
+    background-image: url('images/trees.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 165%;
+}
+.about-us .grid-obj3 #email-icon{
+    width: 75px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about-us .grid-obj3 p{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    margin-top:0 ;
+}
+.about-us .grid-obj3 input[type='text']{
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px green;
+    width: 80%;
+}
+
+.about-us .grid-obj3 input[type='submit'] {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 30px;
+    width: 35%;
+    border-radius: 15px;
+    border: none;
+    background-color: #426918;
+    color: white;
+}
+.about-us .grid-obj3 input[type='submit']:hover{
+    animation-name: changeColor;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+@keyframes changeColor{
+    100%{background-color:#b7d894 ; color: rgba(0,0,0);}
+}
+
+
+.donate{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.donate h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.donate .locations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    height: 500px;
+    grid-gap: 25px;
+}
+.donate .locations .grid{
+    border-radius: 15px;
+}
+.donate .locations a{
+    border-radius: 15px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    color: black;
+    width: 100%;
+    height: 500px;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.25);
+    position: relative;
+    transition: all .15s;
+}
+.donate .locations a:hover{
+    transform: translate3d(0,-1px,0) scale(1.1);
+}
+
+.donate .locations #na{
+    background-image: url('images/north-america.svg');
+    background-repeat: no-repeat;
+    background-position-x:50px ;
+    background-position-y:200px ;
+    background-color: #3BB653;
+}
+.donate .locations #africa{
+    background-image: url('images/africa.svg');
+    background-repeat: no-repeat;
+    background-position-x:50px ;
+    background-position-y:200px ;
+    background-color: #57C84D;
+}
+.donate .locations #asia{
+    background-color: #83D475;
+    background-image: url('images/asia.svg');
+    background-repeat: no-repeat;
+    background-position-x:50px ;
+    background-position-y:200px ;
+}
+.donate .locations #sa{
+    background-color: #C5E8B7;
+    background-image: url('images/south-america.svg');
+    background-repeat: no-repeat;
+    background-position-x:50px ;
+    background-position-y:200px ;
+}
+.donate p{
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.about-us .grid-obj2 .togglebar .toggletext #doante-button{
+    height:30px;
+}
+.events{
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 700px;
+}
+.events h1{
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-family:'Work Sans', sans-serif;
+}
+.events img{
+    border-radius: 50%;
+    float: right;
+    height: 500px;  
+}
+.events .event-name {
+    font-family:'Work Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom:30px ;
+}
+
+
+.events .description{
+    width: 40%;
+    font-family:'Work Sans', sans-serif;
+    font-size: 20px;
+}
+.events .timer{
+    width: 40%;
+    font-family:'Work Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 80px;
+    line-height: 2;
+}
+
+footer{
+    background-color: rgb(22, 21, 21);
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer a{
+    color: white;
+
+}
+footer a:hover{
+    color: yellowgreen;
+}
+.educate{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.educate h1{
+    margin-bottom: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+}
+.educate .educate-text{
+    width: 62%;
+    padding-bottom: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+.educate .educate-text li{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 25px;
+}
+
+.educate .educate-text span{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about-us .grid-obj2 #toggletext button{
+    border-radius: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    background:transparent;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow:10px 10px 5px 0px rgba(0,0,0,0.3);
+    margin-top:20px ;
+    margin-left: 60%;
+}
+.events .next-event{
+    width: 40%;
+}
+.events .next-event button{
+    border-radius: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color:rgb(242 251 233) ;
+    width: 100%;
+    text-align: left;
+    height: 60px;
+}
+.events .next-event button:hover{
+    animation: 1s fly alternate;
+}
+@keyframes fly{
+    from{
+        padding-left: 0px;
+        opacity: 100%;
+    }
+
+    to{
+        padding-left: 400px;
+        opacity: 0%;}
+}
+.events .description a{
+    color: black;
+}
+.events .description a:hover{
+    color: thistle;
+}
